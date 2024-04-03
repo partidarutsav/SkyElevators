@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styles for larger screens */
+/* Styles for larger screens */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: radius 1px;
+    border: #6ccbf7;
+  }
+  
+  .logo {
+    width: 100px; /* Adjust width as needed */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* Styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logo {
+      margin-bottom: 20px; /* Add space between logo and navigation links */
+    }
+  
+    nav {
+      margin-top: 20px;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+
+  
+  
+  .main-content {
+    padding: 40px;
+    text-align: center;
+    background-color:  #f4f4f4;
+    /* background-image: url('baa.png') ; */
+    color:#333;
+  }
+  
+  .about-section {
+    background-color: #f4f4f4;
+    padding: 40px;
+  }
+  
+  .about-section .image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .about-section .image-gallery img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .services-section {
+    padding: 40px;
+    background-color: #e8e8e8;
+     /* background-image: url('baa.png') ; */
+  }
+  
+  .contact-section {
+    padding: 40px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
