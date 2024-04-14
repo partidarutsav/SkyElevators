@@ -89,16 +89,61 @@
   
   <hr><hr>
 
+  <style>
+    /* Styles for image slider */
+    .image-slider {
+      max-width: 50%;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    .slide {
+      min-width: 100%;
+    }
+  
+    /* Styles for images */
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+  </head>
+  <body>
+  
   <section id="about" class="about-section">
     <h2>About Us</h2>
     <p>Here at SkyElevators, we are dedicated to providing top-notch lift construction services. Check out some of our completed projects below.</p>
-    <div class="image-gallery">
-      <!-- Placeholder images -->
-      <img src="img.jpg" alt="Lift Construction Image">
-      <img src="img4.jpg" alt="Lift Construction Image">
-      <img src="img3.jpg" alt="Lift Construction Image">
+    <div class="image-slider">
+      <div class="slides">
+        <!-- Placeholder images -->
+        <div class="slide"><img src="img.jpg" alt="Lift Construction Image"></div>
+        <div class="slide"><img src="img4.jpg" alt="Lift Construction Image"></div>
+        <div class="slide"><img src="img3.jpg" alt="Lift Construction Image"></div>
+      </div>
     </div>
   </section>
+  
+  <script>
+    // Auto slideshow functionality
+    let slideIndex = 0;
+    showSlides();
+  
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds (adjust as needed)
+    }
+  </script>
   
 
   <section id="services" class="services-section" >
